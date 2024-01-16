@@ -1,81 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tickrize</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="marquee.css" />
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="marquee.js"></script>
+    <title>Tickrize</title>
+    
+  </head>
 
-    <body>
-        <section class="section__container steps__container">
-            <p class="subheader">TRAVEL SUPPORT</p>
-            <h2 class="section__header">Plan your travel with confidence</h2>
-            <p class="description">
-              Find help with your bookings and travel plans, and see what to expect
-              along your journey.
+  <body>
+    <nav>
+
+      <img class="logo" src="image-2/ticlogo.png">
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Book</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+        <li class="link"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Enjoy Your Dream Vacation</h1>
+          <p>Book Flights and stay packages at lowest price.</p>
+        </div>
+        <div class="booking__container">
+          <form>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Location</label>
+              </div>
+              <p>Where are you going?</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Check In</label>
+              </div>
+              <p>Add date</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Check Out</label>
+              </div>
+              <p>Add date</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Guests</label>
+              </div>
+              <p>Add guests</p>
+            </div>
+          </form>
+          <button class="btn"><i class="ri-search-line"></i></button>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="marquee" data-marquee-duration="30">
+        <div class="marquee__inner">
+          <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+            the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+            secure transactions using cryptocurrency.</div>
+        </div>
+      </div>
+
+      <div class="marquee" data-marquee-duration="20">
+        <div class="marquee__inner">
+          <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+            the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+            secure transactions using cryptocurrency.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container popular__container">
+      <h2 class="section__header">Popular Flights</h2>
+      <div class="popular__grid">
+        <div class="popular__card">
+          <img src="image-2/plaza.jpeg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Plaza Hotel</h4>
+              <h4>$499</h4>
+            </div>
+            <p>New York City, USA</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="image-2/rits.jpeg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Ritz Paris</h4>
+              <h4>$549</h4>
+            </div>
+            <p>Paris, France</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="image-2/pen.jpeg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Peninsula</h4>
+              <h4>$599</h4>
+            </div>
+            <p>Hong Kong</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="image-2/atl.jpeg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Atlantis The Palm</h4>
+              <h4>$449</h4>
+            </div>
+            <p>Dubai, United Arab Emirates</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="image-2/tok.jpeg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Ritz-Carlton</h4>
+              <h4>$649</h4>
+            </div>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="image-2/marina.jpeg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Marina Bay Sands</h4>
+              <h4>$549</h4>
+            </div>
+            <p>Singapore</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">What our client say</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="image-2/client1.jpeg" alt="client" />
+            <p>
+              The booking process was seamless, and the confirmation was
+              instant. I highly recommend Tickrize.
             </p>
           </div>
-    <div>
-          <ul>
-              <li style="--accent-color:#41516C">
-                  <div class="date">01</div>
-                  <div class="titre">Choose Your Destination & Plan</div>
-                  <div class="descr">Select your destination and customize your travel plan effortlessly on our user-friendly platform.</div>
-              </li>
-              <li style="--accent-color:#FBCA3E">
-                  <div class="date">02</div>
-                  <div class="titre">Fill your personal Information and complete your Payement</div>
-                  <div class="descr">Provide your details and securely finalize your payment for a hassle-free transaction.</div>
-              </li>
-              <li style="--accent-color:#E24A68">
-                  <div class="date">03</div>
-                  <div class="titre">Receive Email with Flight Details and Unique NFT</div>
-                  <div class="descr">Sit back, relax, and await an email containing all your flight information along with a special digital collectible – your unique NFT, making your journey truly memorable.</div>
-              </li>
-    
-    </Div>
-        </section>
-       <!-- cards -->
-<section class="cards" id="Skills">
-    <h2 class="title">What makes us different</h2>
-    <div class="content">
-         <!-- first card -->
-                <div class="card">
-                    <div class="icon">
-                    <iconify-icon icon="mdi:clock-fast"></iconify-icon>
-                    </div>
-                    <div class="info">
-                        <h3>Faster</h3>
-                        <p>Get ready for a faster travel experience with us! From rapid check-ins to prompt boarding, we've streamlined every step for your convenience.</p>
-                    </div>
-                </div>
-  
-  
-         <!-- second card -->
-                <div class="card">
-                  <div class="icon">
-                    <iconify-icon icon="material-symbols:airplane-ticket"></iconify-icon>
-                  </div>
-                  <div class="info">
-                      <h3>More Safe</h3>
-                      <p>We prioritize your well-being with rigorous safety measures throughout your journey. Our commitment extends to secure payment methods, ensuring your financial transactions are encrypted for peace of mind.</p>
-                  </div>
-              </div>
-      
-      
-          <!-- third card -->
-              <div class="card">
-                  <div class="icon">
-                    <iconify-icon icon="fa6-solid:gifts"></iconify-icon>
-                  </div>
-                  <div class="info">
-                      <h3>More Rewards and prizes</h3>
-                      <p>Earn valuable points with every reservation, leading to exclusive benefits such as flight upgrades and travel packages. As a special touch, each booking comes with a unique NFT, turning your travel memories into digital collectibles.</p>
-                  </div>
-              </div>
+          <div class="client__card">
+            <img src="image-2/client2.jpeg" alt="client" />
+            <p>
+              The website provided detailed information about hotel, including
+              amenities, photos, which helped me make an informed decision.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="image-2/client3.jpeg" alt="client" />
+            <p>
+              I was able to book a room within minutes, and the hotel exceeded
+              my expectations. I appreciate Tickrize.
+            </p>
+          </div>
+        </div>
       </div>
-        </section>
-    </body>
+    </section>
+
+    <section class="section__container">
+      <div class="reward__container">
+        <p>100+ NFTS</p>
+        <h4>Join rewards and discover amazing NFTS on your booking</h4>
+        <button class="reward__btn">Join Rewards</button>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="marquee" data-marquee-duration="30">
+        <div class="marquee__inner">
+          <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+            the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+            secure transactions using cryptocurrency.</div>
+        </div>
+      </div>
+
+      <div class="marquee" data-marquee-duration="20">
+        <div class="marquee__inner">
+          <div class="marquee__content">Embark on a seamless journey with Tickrize, where cutting-edge technology meets
+            the world of aviation. Explore the future of ticketing with our real-time platform, ensuring swift and
+            secure transactions using cryptocurrency.</div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section>
+      <div id="sponsors" class="slider">
+        <h2
+          style="text-align: center; margin-bottom: 60px; color:#113946; font-weight: 600; text-transform: uppercase;">
+          Sponsered By</h2>
+        <div class="slide-track">
+          <div class="slide">
+            <img src="1200px-Amazon_Web_Services_Logo.svg.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="PNGPIX-COM-Microsoft-Logo-PNG-Transparent.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="Untitled design-32.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="ibm.png" alt="">
+          </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Tickrize</h3>
+          <p>
+            Welcome to XRP TRAVEL (Tickrize), an avant-garde airport booking ticket platform that transcends traditional
+            norms. </p>
+          <p>
+            Immerse yourself in the dark allure of cryptocurrency, where payments are swift, secure, and adorned with
+            the uniqueness of NFTs. </p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <p>About Us</p>
+          <p>Our Team</p>
+          <p>Blog</p>
+          <p>Book</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <p>Social Media</p>
+          <p>Help Center</p>
+          <p>Partnerships</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Tickrize. All rights reserved.
+      </div>
+    </footer>
+    
+  </body>
 
 </html>
